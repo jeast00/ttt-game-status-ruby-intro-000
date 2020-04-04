@@ -58,6 +58,10 @@ end
 
 def winner(board)
   token = won?(board)
+  if !won?(board)
+    return nil
+  end
+
   if board[token[0]] == "X"
     return "X"
   else
