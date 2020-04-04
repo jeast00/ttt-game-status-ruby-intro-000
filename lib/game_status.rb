@@ -61,11 +61,11 @@ def winner(board)
   token = won?(board)
   if !won?(board)
     return nil
+
+  if board[token[0]] == "X"
+    return "X"
   else
-    if board[token[0]] == "X"
-      return "X"
-    else
-      return "O"
+    return "O"
     end
   end
 end
